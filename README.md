@@ -1,6 +1,6 @@
-<img width="149" height="19" alt="image" src="https://github.com/user-attachments/assets/62515736-578c-4cdc-9f9f-71be514e88ae" /># Coda MCP Read-Only Server
+# Coda MCP Read-Only Server
 
-This project implements a Model Context Protocol (MCP) server that acts as a bridge to interact with the [Coda](https://coda.io/) API. It allows an MCP client (like an AI assistant) to perform actions on Coda pages, such as listing, creating, reading, updating, duplicating, and renaming.
+This project implements a Model Context Protocol (MCP) server that acts as a bridge to interact with the [Coda](https://coda.io/) API. It allows an MCP client (like an AI assistant) to perform actions on Coda pages, such as listing and reading.
 
 ## Acknowledgments
 
