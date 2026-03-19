@@ -1,12 +1,12 @@
 {
-  "name": "coda-mcp",
+  "name": "coda-mcp-readonly",
   "version": "1.6.1",
   "description": "MCP Server for Coda",
   "repository": {
     "url": "https://github.com/orellazri/coda-mcp"
   },
   "bin": {
-    "coda": "./dist/index.js"
+    "coda-readonly": "./dist/index.js"
   },
   "files": [
     "dist"
