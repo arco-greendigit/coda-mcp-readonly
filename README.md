@@ -1,4 +1,4 @@
-# Coda MCP Read-Only Server
+<img width="149" height="19" alt="image" src="https://github.com/user-attachments/assets/62515736-578c-4cdc-9f9f-71be514e88ae" /># Coda MCP Read-Only Server
 
 This project implements a Model Context Protocol (MCP) server that acts as a bridge to interact with the [Coda](https://coda.io/) API. It allows an MCP client (like an AI assistant) to perform actions on Coda pages, such as listing, creating, reading, updating, duplicating, and renaming.
 
@@ -29,9 +29,9 @@ Add the MCP server to Cursor/Claude Desktop/etc. like so:
 ```json
 {
   "mcpServers": {
-    "coda": {
+    "coda-readonly": {
       "command": "npx",
-      "args": ["-y", "coda-mcp@latest"],
+      "args": ["-y", "coda-mcp-readonly@latest"],
       "env": {
         "API_KEY": "..."
       }
@@ -43,22 +43,6 @@ Add the MCP server to Cursor/Claude Desktop/etc. like so:
 Required environment variables:
 
 - `API_KEY`: Your Coda API key. You can generate one from your Coda account settings.
-
-This MCP server is also available with Docker, like so:
-
-```json
-{
-  "mcpServers": {
-    "coda": {
-      "command": "docker",
-      "args": ["run", "-i", "--rm", "-e", "API_KEY", "reaperberri/coda-mcp:latest"],
-      "env": {
-        "API_KEY": "..."
-      }
-    }
-  }
-}
-```
 
 ## Local Setup
 
