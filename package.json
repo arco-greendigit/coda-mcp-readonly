@@ -5,7 +5,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arco-greendigit/coda-mcp-readonly.git"
-  }
+  },
   "bin": {
     "coda-readonly": "./dist/index.js"
   },
