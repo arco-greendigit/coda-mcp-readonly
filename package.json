@@ -1,10 +1,11 @@
 {
   "name": "coda-mcp-readonly",
-  "version": "1.6.1",
+  "version": "0.0.1",
   "description": "MCP Server for Coda",
   "repository": {
-    "url": "https://github.com/arco-greendigit/coda-mcp-readonly"
-  },
+    "type": "git",
+    "url": "git+https://github.com/arco-greendigit/coda-mcp-readonly.git"
+  }
   "bin": {
     "coda-readonly": "./dist/index.js"
   },
