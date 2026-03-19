@@ -1,6 +1,12 @@
-# Coda MCP Server
+# Coda MCP Read-Only Server
 
 This project implements a Model Context Protocol (MCP) server that acts as a bridge to interact with the [Coda](https://coda.io/) API. It allows an MCP client (like an AI assistant) to perform actions on Coda pages, such as listing, creating, reading, updating, duplicating, and renaming.
+
+## Acknowledgments
+
+This project is a fork of the original [Coda MCP server](https://github.com/orellazri/coda-mcp).
+
+**Credits to [Orel Lazri](https://github.com/orellazri)** for the original implementation and the foundation of this tool.
 
 ## Features
 
@@ -8,23 +14,13 @@ The server exposes the following tools to the MCP client:
 
 - **`coda_list_documents`**: Lists all documents available to the user.
 - **`coda_list_pages`**: Lists all pages within the configured Coda document with pagination support.
-- **`coda_create_page`**: Creates a new page in the document, optionally under a specified parent page (creating a subpage) and populating it with initial markdown content.
 - **`coda_get_page_content`**: Retrieves the content of a specified page (by ID or name) as markdown.
-- **`coda_replace_page_content`**: Replaces the content of a specified page with new markdown content.
-- **`coda_append_page_content`**: Appends new markdown content to the end of a specified page.
-- **`coda_duplicate_page`**: Creates a copy of an existing page with a new name.
-- **`coda_rename_page`**: Renames an existing page.
 - **`coda_peek_page`**: Peek into the beginning of a page and return a limited number of lines.
 - **`coda_resolve_link`**: Resolve metadata given a browser link to a Coda object.
 - **`coda_list_tables`**: List tables in a document.
 - **`coda_list_columns`**: List columns in a table.
 - **`coda_list_rows`**: List rows in a table with optional filtering and sorting.
 - **`coda_get_row`**: Get a single row from a table.
-- **`coda_upsert_rows`**: Insert or upsert rows into a table.
-- **`coda_update_row`**: Update a single row in a table.
-- **`coda_delete_row`**: Delete a single row from a table.
-- **`coda_delete_rows`**: Delete multiple rows from a table.
-- **`coda_push_button`**: Push a button column on a row in a table.
 
 ## Usage
 
