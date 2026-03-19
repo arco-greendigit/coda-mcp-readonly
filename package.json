@@ -1,6 +1,6 @@
 {
   "name": "coda-mcp-readonly",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MCP Server for Coda",
   "repository": {
     "type": "git",
